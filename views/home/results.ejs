@@ -8,10 +8,11 @@
         <% for (let info in source.searches) {%> 
             <% if (source.searches[info].show.image) { %>
                 <div class="p-3 m-2">
-                    <img src=  <%=source.searches[info].show.image.medium %>   alt="not found" class = "">
-                     <div><%= source.searches[info].show.name %></div>
+                    <a href="/home/results/<%= encodeURIComponent(source.searches[info].show.name) %>">
+                        <img src="<%= source.searches[info].show.image.medium %>" alt="not found" class="">
+                        <div><%= source.searches[info].show.name %></div>
+                    </a>
                 </div>
-             
             <% }else{ %>
                 <img src="https://imgs.search.brave.com/hHYWDTgwqs0K3y20IEj4j0BMZRNaAp0ZYUZ3wlBkQho/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3Ivb2gtbm8tNDA0/LWVycm9yLXBhZ2Ut/d2ViXzEyNDUwNy02/NDA0LmpwZz9zaXpl/PTYyNiZleHQ9anBn" alt="">
             <%}} %> 
