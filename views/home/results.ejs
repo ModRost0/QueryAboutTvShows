@@ -1,16 +1,16 @@
 <%- include('../partials/head') -%>
 <title>Search results</title>
 </head>
-<body>
+<body class="bg-dark">
     <%- include('../partials/navBar') -%>
-    <h1>Showing Results for <%= source.title %> </h1>
+    <h1 class="text-primary m-5">Showing Results for <%= source.title %> </h1>
     <div class="container d-flex flex-wrap">
         <% for (let info in source.searches) {%> 
             <% if (source.searches[info].show.image) { %>
                 <div class="p-3 m-2">
                     <a href="/home/results/<%= encodeURIComponent(source.searches[info].show.name) %>">
                         <img src="<%= source.searches[info].show.image.medium %>" alt="not found" class="">
-                        <div><%= source.searches[info].show.name %></div>
+                        <div class="text-primary m-5"><%= source.searches[info].show.name %></div>
                     </a>
                 </div>
             <% }else{ %>

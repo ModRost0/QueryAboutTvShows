@@ -1,11 +1,11 @@
 <%- include('../partials/head') -%>
 <title>Upcomming movies</title>
 </head>
-<body>
+<body class="bg-dark">
     <%- include('../partials/navBar') -%>
-    <h1>Upcomming Movies</h1>
+    <h1 class="text-primary m-5">Upcomming Movies</h1>
     <% source.title.forEach(e => { %>
-     <p><%= e.title%> </p>
+     <p class="text-primary m-5"><%= e.title%> </p>
     <% }) %>
 </body>
 
