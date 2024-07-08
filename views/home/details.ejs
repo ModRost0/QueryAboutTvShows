@@ -6,7 +6,7 @@
     <div class="container">
                 <h1 class="m-2 p-3 text-primary m-5">Details for '<%= newData.dataObj.show.name%>' </h1>
         <img src="<%=newData.dataObj.show.image.medium%>" alt="">
-        <h2 text-primary m-5>Rating: <%= newData.dataObj.show.rating.average%> </h2> 
+        <h2 class="text-primary m-2" >Rating: <%= newData.dataObj.show.rating.average%> </h2> 
         <a href='/home/results/<%=encodeURIComponent(newData.dataObj.show.name)%>/edit'>Rate</a>
         <a href="/home/results">Back</a>
         </form>
