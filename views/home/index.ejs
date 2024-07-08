@@ -4,6 +4,8 @@
 <body>
     <%- include('../partials/navBar') -%>
     <h1>Movies Database</h1>
-
+    <form action="/home/results/" method="post" class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
 </body>
 <%- include('../partials/foot') -%>
